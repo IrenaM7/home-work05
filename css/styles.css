@@ -573,7 +573,7 @@ letter-spacing: 0.04em;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(46, 47, 66, 0.4);
+  background:var(--navy-blue-modal);
 
   transition: opacity var(--trans--),   visibility var(--trans--);
 
@@ -620,18 +620,18 @@ letter-spacing: 0.04em;
   border-radius: 50%;
   color:var(--navy-blue-dark);
 
-
-
   transition: background-color var(--trans--),
   border var(--trans--);
 
 }
+
 .modal-close-btn:hover,
 .modal-close-btn:focus{
-  background-color: var(--accent-ocean-color);
+  background-color:var(--ocean-pressed-state);
   border: none;
- color :var(--primary-white-color);
+  color :var(--white-background);
 }
+
 .modal-close-icon{
   padding: 0;
   display: flex;
@@ -640,9 +640,11 @@ letter-spacing: 0.04em;
   
   transition: fill var(--trans--);
 
-}.modal-form{
+}
+.modal-form{
   width: 100%;
 }
+
 .dmodal{
   padding-top: 16px;
   padding-bottom: 16px;
@@ -650,13 +652,15 @@ letter-spacing: 0.04em;
 
 .modal-text{
   margin: 0px;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.02em;
-text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue-dark);
 
 }
+
 .sclas{
   position: absolute;
   pointer-events: none;
@@ -699,9 +703,6 @@ transition: var(--trans--);
   fill: var(--color-iris);
 }
 
-
-
-
 .tcomment{
   display: block;
   resize: none;
@@ -714,15 +715,12 @@ transition: var(--trans--);
   line-height: 14px;
   letter-spacing: 0.01em;
 
-
-  border-radius: 4px;
-  border: 1px solid var(--navy-blue-modal);
-
   outline: transparent;
   outline-offset: -1px;
   transition: var(--trans--);
   
 }
+
 .tcomment::placeholder{
   color: var(--navy-blue-modal);
 }
@@ -745,7 +743,7 @@ transition: var(--trans--);
   line-height: 14px;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
-  color:var(--navy-blue-modal);
+  
 }
 
 .ntext{
@@ -754,7 +752,7 @@ transition: var(--trans--);
   line-height: 14px;
   letter-spacing: 0.04em;
   margin-bottom: 4px;
-  color:var(--navy-blue-modal);
+  
 }
 
 .link-text{
@@ -763,7 +761,7 @@ transition: var(--trans--);
   line-height: 16px;
   letter-spacing: 0.04em;
   text-align: left;
-  color: var(--color-iris);
+  color:var(--color-iris);
 }
 
 .ichek{
