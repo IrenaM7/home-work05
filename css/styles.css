@@ -573,10 +573,9 @@ letter-spacing: 0.04em;
   flex-shrink: 0;
   top: 0;
   left: 0;
-  background:var(--navy-blue-modal);
-  background: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+  background: rgba(46, 47, 66, 0.40);
 
-  transition: opacity var(--trans--),   visibility var(--trans--);
+  transition:opacity var(--trans--), visibility var(--trans--);
 
 }
 .is-hidden{
