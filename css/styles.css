@@ -571,8 +571,7 @@ letter-spacing: 0.04em;
   width: 1440px;
   height: 676px;
   margin: 0 auto;
-  top: 0;
-  left: 0;
+  
   background:var(--navy-blue-modal);
   transition: opacity var(--trans--), visibility var(--trans--);
 
