@@ -574,7 +574,7 @@ letter-spacing: 0.04em;
   top: 0;
   left: 0;
   background:var(--navy-blue-modal);
-  transition:opacity var(--trans--), visibility var(--trans--);
+  transition: opacity var(--trans--), visibility var(--trans--);
 
 }
 .is-hidden{
