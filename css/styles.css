@@ -7,7 +7,7 @@
   --light-slate-subtle-text:#8e8f99;
   --corneflower-accent:#e7e9fc;
   --cloud-light:#f4f4fd;
-  --navy-blue-modal:#ababb3;
+  --navy-blue-modal:#2E2F4266;
   --grey-hero-background:#6c6d7a;
   --white-background:#fff;
   --dairy-modal-background:#fcfcfc;
@@ -572,7 +572,7 @@ letter-spacing: 0.04em;
   height: 100%;
   top: 0;
   left: 0;
-  background:rgba(46, 47, 66, 0.40);
+  background:var(--navy-blue-modal);
   transition: opacity var(--trans--), visibility var(--trans--);
 
 }
