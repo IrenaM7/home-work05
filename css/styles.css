@@ -490,12 +490,13 @@ ul{
 .footer-cont-soc{
   margin-right: 80px;
 }
+
 /*footer-form*/
 
 .footer-form{
   display: block;
-
 }
+
 .fmail{ 
   border: 1px solid var(--white-background);
   filter: drop-shadow(0px 4px 4px 0px rgba(0, 0, 0, 0.15));
@@ -505,12 +506,12 @@ ul{
   width: 264px;
   padding: 8px 16px;
   color:var(--white-background);
-
-
 }
+
 .lab{
   position: relative;
 }
+
 .smail{
   position: absolute;
   top: 50%;
@@ -520,7 +521,7 @@ ul{
   line-height: 24px;
   letter-spacing: 0.04em;
   color:var(--white-background);
-  transition: var(--trans--);
+  transition:transform var(--trans--);
 }
   
 .fmail:focus+.smail,
@@ -533,7 +534,6 @@ ul{
 }
 
 .forms{
-  
   display: flex;
   gap:24px;
 }
@@ -559,14 +559,9 @@ ul{
   letter-spacing: 0.04em;
 }
  
-
-
-
 .foter-button-form{
   position: absolute;
-  right:24px;
-  
-  
+  right:24px;  
 }
 
 /*modal windos*/
@@ -593,12 +588,10 @@ ul{
   left: 50%;
   transform: translate(-50% ,-50%);
 
-  
   min-height: 584px;
   min-width: 408px;
   padding: 72px 24px 24px 24px;
   
- 
   border-radius: 4px;
   background:var(--dairy-modal-background);
   
@@ -652,7 +645,6 @@ ul{
   display: flex;
   padding: 0;
   fill:currentColor;
-  transition: fill var(--trans--);
 }
 
 .modal-form{
@@ -730,17 +722,17 @@ ul{
 
   outline: transparent;
   outline-offset: -1px;
-  transition: var(--trans--);
+  transition: outline var(--trans--);
   
-}
-
-.textarea-form::placeholder{
-  color: var(--navy-blue-modal);
 }
 
 .textarea-form:hover,
 .textarea-form:focus{
   outline: 1px solid var(--iris-primary-brand);
+}
+
+.textarea-form::placeholder{
+  color: var(--navy-blue-modal);
 }
 
 .span-text{
@@ -772,7 +764,8 @@ ul{
   border: 1px solid var(--navy-blue-modal);
   border-radius: 2px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' fill='none'%3E%3Cpath fill='%23F4F4FD' d='M8.446.255A.917.917 0 0 1 10 .901a.928.928 0 0 1-.242.649L4.864 7.704a.92.92 0 0 1-1.019.229.92.92 0 0 1-.306-.204L.293 4.466a.925.925 0 0 1-.226-1.024.925.925 0 0 1 .87-.578.916.916 0 0 1 .656.294L4.162 5.74 8.422.282a.329.329 0 0 1 .025-.027h-.001Z'/%3E%3C/svg%3E");
-  transition: var(--trans--);
+  transition:background-color var(--trans--),
+  border-color var(--trans--);
 }
 
 .ichek:checked{
@@ -783,7 +776,6 @@ ul{
  .lchek{
   display: flex;
   gap: 8px;
-  
   margin-bottom: 24px;
 
  }
