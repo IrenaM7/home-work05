@@ -499,20 +499,23 @@ ul{
 
 .fmail{ 
   border: 1px solid var(--white-background);
-  filter: drop-shadow(0px 4px 4px 0px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background:var(--navy-blue-dark);
+  background-color: transparent;
   height: 40px;
   width: 264px;
   padding: 8px 16px;
   color:var(--white-background);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .lab{
   position: relative;
 }
 
-.smail{
+.fmail::placeholder{
   position: absolute;
   top: 50%;
   left: 16px;
@@ -524,8 +527,8 @@ ul{
   transition:transform var(--trans--);
 }
   
-.fmail:focus+.smail,
-.fmail:hover+.smail{
+.fmail::placeholder:focus,
+.fmail::placeholder:focus{
   transform: translateY(-135%);
 }
 
@@ -542,10 +545,12 @@ ul{
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  cursor: pointer;
 
   height: 40px;
-  width: 165px;
+  min-width: 165px;
   padding: 8px 24px;
 
   background-color:var(--iris-primary-brand);
@@ -560,8 +565,9 @@ ul{
 }
  
 .foter-button-form{
-  position: absolute;
-  right:24px;  
+  /*position: absolute;*/
+  margin-left: 16px;
+ /* right:24px;*/  
 }
 
 /*modal windos*/
