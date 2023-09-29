@@ -526,15 +526,6 @@ ul{
   color:var(--white-background);
   transition:transform var(--trans--);
 }
-  
-.fmail::placeholder:focus,
-.fmail::placeholder:focus{
-  transform: translateY(-135%);
-}
-
-.email:hover .smail{
-  top: -30%;
-}
 
 .forms{
   display: flex;
@@ -565,9 +556,7 @@ ul{
 }
  
 .foter-button-form{
-  /*position: absolute;*/
-  margin-left: 16px;
- /* right:24px;*/  
+  margin-left: 16px; 
 }
 
 /*modal windos*/
