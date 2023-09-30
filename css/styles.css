@@ -583,7 +583,7 @@ ul{
   left: 50%;
   transform: translate(-50% ,-50%);
 
-  height: 584px;
+  min-height: 584px;
   width: 408px;
   padding: 72px 24px 24px 24px;
   
@@ -596,7 +596,8 @@ ul{
 }
 
 .modal-p{
-  margin: 0px;
+  margin-bottom: 16px;
+  margin-top: 0px;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -630,8 +631,8 @@ ul{
 }
 
 .modal-close-btn:hover,
-.modal-close-btn:focus{
-  background-color:var(--ocean-pressed-state);
+.modal-close-btn:focus {
+  background-color:#404bbf;
   border: none;
    
 }
@@ -642,23 +643,22 @@ ul{
 
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon{
-  fill:var(--white-background)
+  fill:var(--white-background);
 }
 .modal-form{
   width: 100%;
 }
 
 .dmodal{
-  padding-top: 16px;
-  padding-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .ltext{
   display: block;
  
   font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
+  line-height:1.17;
+  letter-spacing: 0.04em;
   margin-bottom: 4px;
   color: var(--light-slate-subtle-text);
   
@@ -666,40 +666,39 @@ ul{
 
 .dform{
   position: relative;
-  margin-bottom: 8px;
+
     
 }
 
 .input-form{
-  color:var(--navy-blue-dark);
   width:100%;
   height: 40px;
   border-radius: 4px;
+  background-color: transparent;
   border: 1px solid var(--navy-blue-modal);
   padding: 0px;
   padding-left:38px;
   outline: transparent;
   outline-offset: -1px;
-  transition: outline var(--trans--);
+  transition:border-color var(--trans--);
 }
 
-.input-form:hover,
 .input-form:focus{
- outline: 1px solid var(--iris-primary-brand);
+  border-color: var(--iris-primary-brand);
 }
 
 .svg-class{
   position: absolute;
-  pointer-events: none;
   display: block;
-  fill: currentColor; 
+  pointer-events: none;
+   
   top: 50%;
-  transform: translateY(-50%);
   left:16px;
+  transform: translateY(-50%);
+  fill: currentColor;
   transition: fill var(--trans--);
 }
 
-.input-form:hover+.svg-class,
 .input-form:focus+.svg-class{
   fill:var(--iris-primary-brand);
 }
