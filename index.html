@@ -488,12 +488,13 @@
                 <textarea class="textarea-form" name="user-comment" rows="6" id="user-comment"
                   placeholder="Text input" ></textarea> 
               </div> 
-              <label class="lchek">
-              <input type="checkbox" name="icomment" class="ichek"/>
-              <span class="span-text">I accept the terms and conditions of the
-                <a href="" class="link-text"> Privacy Policy</a>
-              </span>
-              </label>
+              <div class="dichek">
+                <input type="checkbox" name="user-privacy" class="ichek visually-hidden" 
+                    id="user-privacy" value="true"/>
+                  <label class="label-text" for="user-privacy">I accept the terms and conditions of the
+                    <a href="" class="link-text"> Privacy Policy</a>
+                  </label>
+              </div>
               <button type="submit" class="button-primary">Send</button>
             </form>
           </div>
