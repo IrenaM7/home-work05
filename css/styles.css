@@ -675,9 +675,7 @@ ul{
 
 .dform{
   position: relative;
-   
-
-    
+      
 }
 
 .input-form{
@@ -788,11 +786,13 @@ ul{
    -.306-.204L.293 4.466a.925.925 0 0 1-.226-1.024.925.925 0 0 1 .87-.578.916.916 0 0 1 .656.294L4.162 5.74 8.422.282a.329.329 0 0 1 .025-.027h-.001Z'/%3E%3C/svg%3E");*/
  
 }
+ 
 
-.ichek:checked .schek{
-  background-color:var(--iris-primary-brand);
+.ichek:checked+.label-text> .schek{
+  background-color:var(--ocean-pressed-state);
   border: none;
-  fill: var(--cloud-light);
+  fill:var(--white-background);
+  border-color: var(--ocean-pressed-state);
 
  } 
  
