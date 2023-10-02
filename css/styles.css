@@ -791,7 +791,7 @@ ul{
 .ichek:checked+.label-text> .schek{
   background-color:var(--ocean-pressed-state);
   border: none;
-  fill:var(--white-background);
+  fill:var(--cloud-light);
   border-color: var(--ocean-pressed-state);
 
  } 
