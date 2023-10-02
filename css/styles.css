@@ -560,7 +560,7 @@ ul{
 }
 
 /*modal windos*/
-.backdrop{
+/*.backdrop{
   position: fixed;
   inset: 0;
   display: flex;
@@ -570,12 +570,18 @@ ul{
   background-color:var(--navy-blue-modal);
   transition: opacity var(--trans--), visibility var(--trans--);
 }
-
-.is-hidden{
+*/
+.backdrop{
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+   }
 
 .modal{
   position: absolute;
