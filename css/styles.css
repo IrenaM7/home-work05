@@ -696,7 +696,7 @@ ul{
   border-color: var(--iris-primary-brand);
 }
 
-.svg-class{
+.modal-icon{
   position: absolute;
   display: block;
   pointer-events: none;
