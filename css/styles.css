@@ -708,7 +708,7 @@ ul{
   transition: fill var(--trans--);
 }
 
-.input-form:focus+.svg-class{
+.input-form:focus+.modal-icon{
   fill:var(--iris-primary-brand);
 }
 
